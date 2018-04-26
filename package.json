@@ -1,0 +1,25 @@
+{
+  "name": "polymer-storybook",
+  "version": "0.0.1",
+  "description": "POC demonstrating Polymer 2 web-components with Storybook",
+  "main": "index.js",
+  "repository": "https://github.com/stijnkoopal/polymer-storbyook",
+  "author": "Stijn Koopal",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@storybook/addon-actions": "3.4.0-rc.0",
+    "@storybook/addon-knobs": "3.4.0-rc.0",
+    "@storybook/addon-viewport": "3.4.0-rc.0",
+    "@storybook/polymer": "3.4.0-rc.0",
+    "babel-core": "6.26.0",
+    "babel-runtime": "6.26.0"
+  },
+  "dependencies": {
+    "bower": "1.8.2",
+    "lit-html": "0.9.0"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006"
+  }
+}
