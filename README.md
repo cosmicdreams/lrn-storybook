@@ -11,7 +11,7 @@ After checking out this repo run the following commands to get this working.
 
 ```
 yarn
-bower 
+bower install
 
 yarn storybook
 ```
