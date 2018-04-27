@@ -5,7 +5,12 @@ const requireStory = require.context('../src', true, /\.stories.js$/);
 
 function loadDefaultStories() {
     requireIndex.keys().forEach(filename => requireIndex(filename));
-    requireIndexkeys().forEach(filename => storiesOf(filename, module).add('auto-generated default', () => '<' + filename + '>This is a some demo text to test the word count element</' + filename + '>'));
+    requireIndex.keys().forEach(filename => generateDefaultStories(filename));
+}
+
+function generateDefaultStories(filename) {
+    let element = filename.match(/[a-z]*-[a-z]*/);
+    storiesOf(element, module).add('auto-generated default', () => '<' + element + '>testing one two three</' + element + '>');
 }
 
 function loadStories() {
